@@ -11,6 +11,6 @@ def string_anagrams(str1, str2)
     ascii_array[str1[i].ord - 65] += 1
     ascii_array[str2[i].ord - 65] -= 1
   end
-  ascii_array.length.times { |i| return false if ascii_array[i] != 0 }
+  57.times { |i| return false if ascii_array[i] != 0 }
   return true
 end
